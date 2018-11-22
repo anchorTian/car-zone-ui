@@ -1,1 +1,23 @@
-
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+        <img [src]="images[0]" alt="random first slide">
+        <div class="carousel-caption">
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue molis interdum</p>
+        </div>
+    </ng-template>
+    <ng-template ngbSlide>
+        <img [src]="images[1]" alt="random second slide">
+        <div class="carousel-caption">
+            <h3>Second slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue molis interdum</p>
+        </div>
+    </ng-template>
+    <ng-template ngbSlide>
+        <img [src]="images[2]" alt="random third slide">
+        <div class="carousel-caption">
+            <h3>Thrid slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue molis interdum</p>
+        </div>
+    </ng-template>
+</ngb-carousel>
